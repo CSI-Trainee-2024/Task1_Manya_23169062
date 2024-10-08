@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-</head>
+    <title>Disney Cruise Line</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="media_queries.css">
+    <link rel="shortcut icon" href="assets-2/icon.jpg" type="image/x-icon">
+</head> 
 <body>
     <!-- top banner -->
     <div class="top-banner">
@@ -14,27 +15,30 @@
             <div class="small-bold-text banner-text">An All-New Adventure Is on the Horizon</div>
         </div>
     </div>
-    <!-- navbar -->
-     <nav>
-        <div class="container flex main-nav">
+
+    <!-- nav bar -->
+    <nav>
+        <div class="container main-nav flex">
             <a href="#" class="company-logo">
                 <img src="images/logo.png" alt="company-logo">
             </a>
             <div class="nav-links" id="nav-links">
-                <li><a href="#home" class="hover-links"></a>Home</li>
-                <li><a href="#services" class="hover-links"></a>Services</li>
-                <li><a href="#destinations" class="hover-links"></a>Destinations</li>
-                <li><a href="#entertainment" class="hover-links"></a>Entertainment</li>
-                <li><a href="#" class="hover-links"></a>Contact</li>
-                <li><a href="#" class="hover-links primary-button"></a>Book Now</li>
+                <ul class="flex">
+                    <li><a href="#home" class="hover-links">Home</a></li>
+                    <li><a href="#features" class="hover-links">Features</a></li>
+                    <li><a href="#services" class="hover-links">Services</a></li>
+                    <li><a href="#about" class="hover-links">About Us</a></li>
+                    <li><a href="#" class="hover-links">Contact Us</a></li>
+                    <li><a href="#" class="hover-links primary-button">Book Now</a></li>
+                </ul>
             </div>
-            <a href="#" class="nav-toggle hover-links" id="nav-toggle">
+            <!-- <a href="#" class="nav-toggle hover-links" id="nav-toggle">
                 <i class="fa-solid fa-bars"></i>
-            </a>
+            </a> -->
         </div>
-     </nav>
-     
-     <!-- header-section -->
+    </nav>
+
+    <!-- header-section -->
     <header>
         <div class="container header-section flex">
             <div class="header-left" id="home">
@@ -50,7 +54,7 @@
             </div>
         </div>
     </header>
-    
+
     <!-- companies section --> 
     <section class="companies-section">
         <div class="container" id="about">
@@ -63,5 +67,157 @@
                 Through the magic of imagination, discovery, fantasy and—of course—adventure, the signature whimsy and wonder of favorite stories from Disney, Marvel and Pixar spring to life. Without ever leaving the ship, you’ll be immersed in 7 themed areas—Disney Imagination Garden, Disney Discovery Reef, San Fransokyo Street, Marvel Landing, Toy Story Place, Town Square and Wayfinder Bay. This exciting new ship will also feature many other innovative “firsts” for Disney Cruise Line, including experiences specially created for Southeast Asia.            </div>
         </div>
     </section>
+
+    <!-- big features section -->
+    <br><br><br><br><br>
+    <div class="features-header" id="services">
+        <h2 class="features-heading-text">Our Services</h2>
+    </div>
+    <section class="big-feature-section" >
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="images/signature dining.png" alt="">
+            </div>
+            <div class="feature-desc flex">
+                <h3>Signature Disney Dining</h3>
+                <p>Indulge in a wide array of Disney-inspired restaurants offering something for everyone, from upscale dining to bountiful buffets and quick-service bites. Delight in menus featuring an enticing blend of international flavors, including regionally inspired dishes from Asia and Disney-inspired treats.</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="big-feature-section">
+        <div class="container flex big-feature-container" id="second-big-feature">
+            <div class="feature-desc flex">
+                <h3>Endless Fun for Families and Kids</h3>
+                <p>Whether indulging in fun at the waterslides and pools on the upper deck or enjoying indoor activities like karaoke, bingo, silent DJ sessions, animation classes and game shows, there’s something for everyone in the family to enjoy! Plus, with uniquely themed clubs for kids, tweens and teens, young cruisers can meet new friends and embark on exciting new adventures under the supervision of specially trained Disney counselors.</p>
+            </div>
+            <div class="feature-img">
+                <img src="images/endless fun.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="big-feature-section">
+        <div class="container flex big-feature-container">
+            <div class="feature-img">
+                <img src="images/indulge adults.jpeg" alt="">
+            </div>
+            <div class="feature-desc flex">
+                <h3>Indulgence and Relaxation for Adults</h3>
+                <p>Explore a range of luxury and leisure spaces designed with adults in mind. Unwind in themed bars and lounges that draw inspiration from iconic Disney stories. Indulge in an upscale shopping experience, pamper yourself with a relaxing spa treatment and invigorate your senses with wellness and fitness activities—all amid the magic that is uniquely Disney.</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <!-- <section class="big-feature-section">
+        <div class="container flex big-feature-container" id="second-big-feature">
+            <div class="feature-desc flex">
+                <h3>Disney-Inspired Accommodations</h3>
+            </div>
+            <div class="feature-img">
+                <img src="" class="real-world-img">
+            </div>
+        </div>
+    </section> -->
+
+    <!-- examples section -->
+    <section class="examples-section">
+        <div class="container">
+            <div class="examples-header flex">
+                <h2 class="examples-heading-text">One platform, endless possibilities</h2>
+                <!-- <a href="#" class="secondary-button">See all examples <i class="fa-solid fa-right-long"></i> </a> -->
+            </div>
+            <div class="examples-area flex">
+                <a href="#" class="examples-card" style="background-size: cover; background: linear-gradient(rgb(0,0,0,0.1) , rgb(0,0,0,0.8)), url(images/dining.png); background-size: 100%;">
+                    <h3 class="card-text">Dining</h3>
+                </a>
+                <a href="#" class="examples-card" style="background: linear-gradient(rgb(0,0,0,0.1) , rgb(0,0,0,0.8)), url(images/bar.png); background-size: 100%;">
+                    <h3 class="card-text">Bars and Lounges</h3>
+                </a>
+                <a href="#" class="examples-card" style="background: linear-gradient(rgb(0,0,0,0.1) , rgb(0,0,0,0.8)), url(images/shopping.jpeg); background-size: 100%;">
+                    <h3 class="card-text">Shops and Boutiques</h3>
+                </a>
+                <a href="#" class="examples-card" style="background: linear-gradient(rgb(0,0,0,0.1) , rgb(0,0,0,0.8)), url(images/fitness.png); background-size: 100%;">
+                    <h3 class="card-text">Fitness Center</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- cta section -->
+    <section class="cta-section">
+        <div class="container flex cta-section-container">
+            <h2>Don't Miss Out!</h2>
+            <p>Sign up now to be among the first to receive exciting news about Disney Adventure and be notified when bookings open. And be sure to check back soon—more details to come.</p>
+            <a href="https://forms.gle/L1NTUayZUhPvrd8n6" class="primary-button get-started-btn">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container flex footer-container">
+            <a href="#" class="company-logo">
+                <img src="./assets-2/logo-4.jpg" alt="">
+            </a>
+            <div class="social-icons">
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="link-column flex">
+                <h4>Useful Links</h4>
+                <a href="#home" class="hover-links">Home</a>
+                <a href="#about" class="hover-links">About Us</a> <br>
+                <a href="#features" class="hover-links">Features</a>
+                <a href="#" class="hover-links">Contact Us</a>
+                <a href="#" class="hover-links">Book Now</a>
+            </div>
+            <div class="link-column flex">
+                <h4>Explore</h4>
+                <a href="#" class="hover-links">India Travel Guide</a>
+                <a href="#" class="hover-links">Hotels in Inida</a>
+                <a href="#" class="hover-links">Holiday Rentals in India</a>
+                <a href="#" class="hover-links">All Accommodations Type</a>
+                <a href="#" class="hover-links">Car Hire in India</a>
+                <a href="#" class="hover-links">Travel blogs</a>
+                <!-- <a href="#" class="hover-links">UI/UX Design</a>
+                <a href="#" class="hover-links">Artificial Intelligence</a>
+                <a href="#" class="hover-links">Machine Learning</a> -->
+            </div>
+            <div class="link-column flex">
+                <h4>Legal Links</h4>
+                <a href="#" class="hover-links">Privacy Policy</a>
+                <a href="#" class="hover-links">Refund Policy</a>
+                <a href="#" class="hover-links">Terms and Conditions</a>
+                <a href="#" class="hover-links">Help center</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- subfooter -->
+    <div class="subfooter">
+        <div class="container flex subfooter-container">
+            <a href="#" class="hover-links">Privacy policy</a>
+            <a href="#" class="hover-links">Terms & Conditions</a>
+            <a href="https://gmail.com/"><i class="fa-solid fa-envelope hover-links"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin hover-links"></i></a>
+            <br>
+        </div>
+        <br>
+            <p class=" flex subfooter-container">Copyright <i class="fa-regular fa-copyright"></i> 2024 DISNEY CRUISE LINE. All Rights Reserved.</p>
+        
+    </div>
+
+   
+    <script src="https://kit.fontawesome.com/7a51c80501.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton= document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click' , () =>{
+            navLinks.classList.toggle('active')
+        })
+    </script>
 </body>
 </html>
